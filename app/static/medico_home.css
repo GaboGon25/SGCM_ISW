@@ -1,0 +1,12 @@
+:root{ --accent-1:#00c6ff; --accent-2:#0072ff; --card-radius:12px; --font:'Poppins',sans-serif; }
+*{box-sizing:border-box}
+body{ margin:0; font-family:var(--font); background: linear-gradient(135deg,#e0f7fa,#f2fcfe); color:#333; min-height:100vh; display:flex; flex-direction:column; }
+.navbar{ background: linear-gradient(135deg,var(--accent-2),var(--accent-1)); box-shadow:0 4px 10px rgba(0,114,255,.3); }
+.sidebar{ background:#fff; border-right:1px solid #e0e0e0; padding:1.5rem; box-shadow:2px 0 8px rgba(0,0,0,0.05); }
+.nav-link{ color:var(--accent-2); display:flex; align-items:center; gap:10px; border-radius:10px; padding:10px 12px; margin-bottom:8px; transition:all .3s; font-weight:500; }
+.nav-link i{ color:#00aaff; }
+.nav-link.active{ background:linear-gradient(135deg,var(--accent-1),var(--accent-2)); color:#fff; transform:translateX(3px); }
+main{ flex:1; padding:1.5rem; background:rgba(255,255,255,.9); border-radius:var(--card-radius); margin:1rem; box-shadow:0 5px 20px rgba(0,0,0,0.06); }
+.card{ border:none; border-radius:12px; box-shadow:0 3px 12px rgba(0,0,0,0.06); }
+@media (min-width:992px){ .sidebar-lg{ display:block; width:260px; } }
+@media (max-width:991px){ main{ margin:.75rem } }
